@@ -65,6 +65,7 @@ class ViewController: UIViewController {
         var seconds = currentTime - minutes / 60
         if minutes > 0 {
            seconds = seconds - 60 * minutes
+            
         }
         
         time.text = NSString(format: "%02d:%02d", minutes,seconds) as String
